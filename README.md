@@ -28,13 +28,6 @@ pip install tqdm
 
 ## Usage
 
-1. Clone the repository:
-```bash
-git clone https://github.com/0xinf/youtube_downloader.git
-cd youtube_downloader
-```
-
-2. Run the script:
 ```bash
 # Normal mode
 python youtube_downloader.py "VIDEO_URL"
@@ -42,8 +35,6 @@ python youtube_downloader.py "VIDEO_URL"
 # Verbose mode (shows all available formats and detailed information)
 python youtube_downloader.py -v "VIDEO_URL"
 ```
-
-3. Select your desired format from the list and enjoy!
 
 ## Example Output
 
