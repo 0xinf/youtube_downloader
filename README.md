@@ -2,22 +2,31 @@
 
 A powerful command-line tool for downloading YouTube videos and audio with advanced format selection and progress tracking.
 
-## Features
+## Usage
 
-- 📹 Download videos in multiple qualities (up to 4320p+)
-- 🎵 Extract audio in multiple formats (MP3/AAC)
-- 📊 Real-time progress tracking
-- 🔍 Detailed format information with `-v` flag
-- ✨ Clean and user-friendly interface
-- 📈 User-friendly graphical interface (GUI Version)
-- 📊 Real-time video information display (GUI Version)
-- 📈 Format selection through an interactive table (GUI Version)
-- 📊 Progress bar with download status (GUI Version)
-- 📁 Download size information (GUI Version)
-- 🚫 Cancel download functionality (GUI Version)
-- 📝 Status messages integrated in the interface (GUI Version)
-- 📁 Directory selection dialog (GUI Version)
-- 📈 Support for all video and audio formats (GUI Version)
+### Console Version
+
+```bash
+# Normal mode
+python3 youtube_downloader.py "VIDEO_URL"
+
+# Verbose mode (shows all available formats / codecs and detailed information of the process)
+python3 youtube_downloader.py -v "VIDEO_URL"
+```
+
+### GUI Version
+
+```bash
+python3 youtube_downloader_gui.py
+```
+
+Using the interface:
+1. Enter a YouTube URL in the input field
+2. Click "Fetch Info" to load video information
+3. Select your desired download directory
+4. Choose a format from the available options table
+5. Click "Download" to start downloading
+6. Use "Cancel" if you need to stop the download
 
 ## Requirements
 
@@ -35,17 +44,6 @@ pip install tqdm
 - **macOS**: `brew install ffmpeg`
 - **Linux**: `sudo apt-get install ffmpeg`
 - **Windows**: Download from [FFmpeg official website](https://ffmpeg.org/download.html)
-
-## Usage
-
-```bash
-# Normal mode
-python3 youtube_downloader.py "VIDEO_URL"
-
-# Verbose mode (shows all available formats and detailed information)
-python3 youtube_downloader.py -v "VIDEO_URL"
-```
-
 
 
 ## Example Output
@@ -69,20 +67,23 @@ Available formats:
 ----------------------------------------
 ```
 
-# GUI Version
+## Features
 
-1. Run the GUI version:
-```bash
-python3 youtube_downloader_gui.py
-```
+- 📹 Download videos in multiple qualities (up to 4320p+)
+- 🎵 Extract audio in multiple formats (MP3/AAC)
+- 📊 Real-time progress tracking
+- 🔍 Detailed format information with `-v` flag
+- ✨ Clean and user-friendly interface
+- 📈 User-friendly graphical interface (GUI Version)
+- 📊 Real-time video information display (GUI Version)
+- 📈 Format selection through an interactive table (GUI Version)
+- 📊 Progress bar with download status (GUI Version)
+- 📁 Download size information (GUI Version)
+- 🚫 Cancel download functionality (GUI Version)
+- 📝 Status messages integrated in the interface (GUI Version)
+- 📁 Directory selection dialog (GUI Version)
+- 📈 Support for all video and audio formats (GUI Version)
 
-2. Using the interface:
-   - Enter a YouTube URL in the input field
-   - Click "Fetch Info" to load video information
-   - Select your desired download directory
-   - Choose a format from the available options table
-   - Click "Download" to start downloading
-   - Use "Cancel" if you need to stop the download
 
 
 ## License
